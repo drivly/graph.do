@@ -1,5 +1,31 @@
 import flatten from 'flat'
 
+export const api = {
+  icon: '🚀',
+  name: 'graph.do',
+  description: 'Graph Database on Durable Objects',
+  url: 'https://graph.do/api',
+  type: 'https://apis.do/database',
+  endpoints: {
+    listCategories: 'https://graph.do/api',
+    getCategory: 'https://graph.do/:type',
+  },
+  site: 'https://graph.do',
+  login: 'https://graph.do/login',
+  signup: 'https://graph.do/signup',
+  subscribe: 'https://graph.do/subscribe',
+  repo: 'https://github.com/drivly/graph.do',
+}
+
+export const gettingStarted = [
+  `If you don't already have a JSON Viewer Browser Extension, get that first:`,
+  `https://extensions.do`,
+]
+
+export const examples = {
+  listItems: 'https://templates.do/worker',
+}
+
 export default {
   fetch: (req, env) => {
     const { hostname, pathname } = new URL(req.url)
