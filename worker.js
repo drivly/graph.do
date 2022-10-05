@@ -39,6 +39,7 @@ export default {
 export class Graph {
   constructor(state, env) {
     this.state = state
+    this.env = env
 //     this.state.blockConcurrencyWhile(async () => {
 //       const init = await this.state.storage.get('Aruba')
 //       if (!init) {
