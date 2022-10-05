@@ -11,7 +11,7 @@ export const api = {
     list: 'https://graph.do/:resource',
     search: 'https://graph.do/:resource?prop=value',
     new: 'https://graph.do/:resource/new?prop=value',
-    get: 'https:/graph.do/:resource/:id',
+    get: 'https://graph.do/:resource/:id',
     set: 'https://graph.do/:resource/:id/set?prop=value',
     import: 'https://graph.do/:resource/:id/import/:url',
     delete: 'https://graph.do/:resource/:id/delete',
