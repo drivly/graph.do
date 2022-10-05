@@ -1,0 +1,16 @@
+name = "graph-do"
+route = { pattern = "*/*", zone_name = "graph.do" }
+main = "worker.js"
+usage_model = "unbound"
+compatibility_date = "2022-10-05"
+
+services = [
+  { binding = "CTX", service = "ctx-do", environment = "production" }
+]
+
+[durable_objects]
+bindings = [{name = "GRAPH", class_name = "Graph"}]
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["Graph"]
